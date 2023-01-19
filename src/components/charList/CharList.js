@@ -22,6 +22,7 @@ const CharList = (props) => {
     }
 
     const onCharsLoaded = (charList) => {
+        let ended = false;
         setCharList(charList);
         setNewItemLoading(false);
         setOffset(offset => offset + 9);
