@@ -24,6 +24,7 @@ const ComicsList = () => {
     }
 
     const onComicsLoaded = (comicsList) => {
+        let ended = false;
         setComicsList(comicsList);
         setNewItemLoading(false);
         setOffset(offset => offset + 8);
